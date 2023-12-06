@@ -149,7 +149,8 @@ label {
 /* (0,0,1) */
 input{
     margin-right: 0.5em;
-    font-size: 16px;
+    max-width: 8em;
+    font-size: 14px;
     padding: 0.5em;
 }
 
@@ -159,7 +160,7 @@ button {
     margin-right: 2em;
     border-radius: 0.25em;
     border: none;
-    font-size: 16px;
+    font-size: 14px;
 }
 
 /* (0,1,1) */
