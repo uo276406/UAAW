@@ -23,17 +23,17 @@
         <h1> Series </h1>
     </header>
     <nav>
-        <img alt="Icono del home" src="multimedia/casa.png" />
-        <a href="index.html" tabindex=1 title="Inicio">Inicio</a>
+        <img alt="Icono del inicio" src="multimedia/casa.png" />
+        <a href="index.html" target="_self" title="Enlace a inicio">Inicio</a>
 
         <img alt="Icono de aficiones" src="multimedia/variante-de-balon-de-futbol.png" />
-        <a href="aficiones.html" tabindex=2 title="Enlace a las aficiones">Aficiones</a>
+        <a href="aficiones.html" target="_self" title="Enlace a las aficiones">Aficiones</a>
 
         <img alt="Icono de música" src="multimedia/nota-musical.png" />
-        <a href="musica.html" tabindex=3 title="Gustos musicales">Música</a>
+        <a href="musica.html" target="_self" title="Gustos musicales">Música</a>
 
         <img alt="Icono de series" src="multimedia/serie.png" />
-        <a href="series.html" tabindex=4 title="Enlace a las series">Series</a>
+        <a href="series.html" target="_self" title="Enlace a las series">Series</a>
         
         <label for="search">Buscar:</label>
         <input type="text" id="search" name="search" placeholder="Buscar...">
@@ -46,58 +46,63 @@
             <p> La verdad que he tenido tiempo para ponerme al día con varias series tanto en Netflix como HBO, las
                 últimas que he visto y que más me han gustado son las siguientes: </p>
 
-            <table>
-                <caption> Series principales que destacaría </caption>
-                <tr>
-                    <th>Serie</th>
-                    <th>Puntuación</th>
-                    <th>Reseña</th>
-                </tr>
-                <tr>
-                    <th>The Last of Us</th>
-                    <td>9,5/10</td>
-                    <td>Muy buena serie ambiantada en el videojuego. Refleja muy bien y te mantiene intrigado hasta el
-                        final de temporada.</td>
-                </tr>
-                <tr>
-                    <th>Breaking Bad</th>
-                    <td>9,5/10</td>
-                    <td>Serie de gran calidad. Una trama que cada vez se complica cada vez más y te hace estar atento a
-                        cada detalle. Sin duda si la vuelvo a ver descubro cosas nuevas.</td>
-                </tr>
-                <tr>
-                    <th>Vivir sin permiso</th>
-                    <td>8/10</td>
-                    <td>Esta es española y se ambienta en Galicia. La trama está bien y es bastante entretenida, es
-                        cierto que los capítulos se hacen largos.</td>
-                </tr>
-                <tr>
-                    <th>Chernobyl</th>
-                    <td>10/10</td>
-                    <td>Es una serie rutal que refleja lo que sucedió en el accidente nuclear a la perfección. La he
-                        visto 2 veces ya y los 5 capítulos sin duda que se hacen muy cortos.</td>
-                </tr>
-            </table>
+                <table>
+                    <caption>Series principales que destacaría</caption>
+                    <thead>
+                        <tr>
+                            <th id="serie" scope="col">Serie</th>
+                            <th id="puntuacion" scope="col">Puntuación</th>
+                            <th id="reseña" scope="col">Reseña</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th id="thelastofus" scope="row">The Last of Us</th>
+                            <td headers="puntuacion">9,5/10</td>
+                            <td headers="reseña">Muy buena serie ambientada en el videojuego. Refleja muy bien y te mantiene
+                                intrigado hasta el final de temporada.</td>
+                        </tr>
+                        <tr>
+                            <th id="breakingbad" scope="row">Breaking Bad</th>
+                            <td headers="puntuacion">9,5/10</td>
+                            <td headers="reseña">Serie de gran calidad. Una trama que cada vez se complica más y te hace estar
+                                atento a cada detalle. Sin duda, si la vuelvo a ver, descubro cosas nuevas.</td>
+                        </tr>
+                        <tr>
+                            <th id="vivirsinpermiso" scope="row">Vivir sin permiso</th>
+                            <td headers="puntuacion">8/10</td>
+                            <td headers="reseña">Esta es española y se ambienta en Galicia. La trama está bien y es bastante
+                                entretenida, aunque los capítulos se hacen largos.</td>
+                        </tr>
+                        <tr>
+                            <th id="chernobyl" scope="row">Chernobyl</th>
+                            <td headers="puntuacion">10/10</td>
+                            <td headers="reseña">Es una serie brutal que refleja lo que sucedió en el accidente nuclear a la
+                                perfección. La he visto 2 veces ya y los 5 capítulos sin duda se hacen muy cortos.</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
         </section>
     </main>
     <footer>
         <h2>Enlaces externos</h2>
         <ul>
             <li>
-                <a href="https://uniovi.es" title="Enlace a la web de la Universidad de Oviedo">Universidad de
+                <a href="https://uniovi.es" target="_new" title="Enlace a la web de la Universidad de Oviedo">Universidad de
                     Oviedo</a>
             </li>
             <li>
-                <a href="https://miw.uniovi.es" title="Enlace a la web del máster">Máster en Ingeniería Web</a>
+                <a href="https://miw.uniovi.es" target="_new" title="Enlace a la web del máster">Máster en Ingeniería Web</a>
             </li>
             <li>
                 <img alt="Icono de Linkedin" src="multimedia/linkedin.png" />
-                <a href="https://www.linkedin.com/in/diego-gonz%C3%A1lez-su%C3%A1rez-64b2371b1/"
+                <a href="https://www.linkedin.com/in/diego-gonz%C3%A1lez-su%C3%A1rez-64b2371b1/" target="_new"
                     title="Enlace a perfil de Linkedin">Perfil de Linkedin</a>
             </li>
             <li>
                 <img alt="Icono de Github" src="multimedia/github.png" />
-                <a href="https://github.com/uo276406" title="Enlace a perfil de Github">Perfil de Github</a>
+                <a href="https://github.com/uo276406" target="_new" title="Enlace a perfil de Github">Perfil de Github</a>
             </li>
         </ul>
     </footer>

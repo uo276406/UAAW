@@ -26,17 +26,17 @@
     </header>
 
     <nav>
-        <img alt="Icono del home" src="multimedia/casa.png" />
-        <a href="index.html" tabindex=1 title="Inicio">Inicio</a>
+        <img alt="Icono del inicio" src="multimedia/casa.png" />
+        <a href="index.html" target="_self" title="Enlace a inicio">Inicio</a>
 
         <img alt="Icono de aficiones" src="multimedia/variante-de-balon-de-futbol.png" />
-        <a href="aficiones.html" tabindex=2 title="Enlace a las aficiones">Aficiones</a>
+        <a href="aficiones.html" target="_self" title="Enlace a las aficiones">Aficiones</a>
 
         <img alt="Icono de música" src="multimedia/nota-musical.png" />
-        <a href="musica.html" tabindex=3 title="Gustos musicales">Música</a>
+        <a href="musica.html" target="_self" title="Gustos musicales">Música</a>
 
         <img alt="Icono de series" src="multimedia/serie.png" />
-        <a href="series.html" tabindex=4 title="Enlace a las series">Series</a>
+        <a href="series.html" target="_self" title="Enlace a las series">Series</a>
         
         <label for="search">Buscar:</label>
         <input type="text" id="search" name="search" placeholder="Buscar...">
@@ -75,17 +75,24 @@
             <p> Me gusta hacer viajes en moto. Suelo seguir además a muchos influencers que son motoviajeros y
                 documentan sus aventuras: </p>
             <ul>
-                <li> <a href="https://www.youtube.com/@Nico-RideMeFive" title="Enlace al canal de Ride me five"> Nico -
+                <li> <a href="https://www.youtube.com/@Nico-RideMeFive" target="_new" title="Enlace al canal de Ride me five"> Nico -
                         Ride
                         Me Five </a> </li>
-                <li> <a href="https://www.youtube.com/user/charlysinewan" title="Enlace al canal de Charly Sinewan">
+                <li> <a href="https://www.youtube.com/user/charlysinewan" target="_new" title="Enlace al canal de Charly Sinewan">
                         Charly
                         Sinewan </a> </li>
-                <li> <a href="https://www.youtube.com/@PabloImhoff" title="Enlace al canal de Pablo Imhoff"> Pablo
+                <li> <a href="https://www.youtube.com/@PabloImhoff" target="_new" title="Enlace al canal de Pablo Imhoff"> Pablo
                         Imhoff
                     </a> </li>
             </ul>
-            <video src="multimedia/CharlySinewan.mp4" controls preload="auto"> </video>
+            <video controls>
+                <source src="multimedia/CharlySinewan.mp4" type="video/mp4" />
+                <source src="multimedia/CharlySinewan.mp4" type="video/webm" />
+                <p>
+                  Your browser doesn't support HTML video. Here is a
+                  <a href="multimedia/CharlySinewan.mp4">link to the video</a> instead.
+                </p>
+              </video>
         </section>
         <section id="viajar">
             <h2> Viajar </h2>
@@ -111,20 +118,20 @@
         <h2>Enlaces externos</h2>
         <ul>
             <li>
-                <a href="https://uniovi.es" title="Enlace a la web de la Universidad de Oviedo">Universidad de
+                <a href="https://uniovi.es" target="_new" title="Enlace a la web de la Universidad de Oviedo">Universidad de
                     Oviedo</a>
             </li>
             <li>
-                <a href="https://miw.uniovi.es" title="Enlace a la web del máster">Máster en Ingeniería Web</a>
+                <a href="https://miw.uniovi.es" target="_new" title="Enlace a la web del máster">Máster en Ingeniería Web</a>
             </li>
             <li>
                 <img alt="Icono de Linkedin" src="multimedia/linkedin.png" />
-                <a href="https://www.linkedin.com/in/diego-gonz%C3%A1lez-su%C3%A1rez-64b2371b1/"
+                <a href="https://www.linkedin.com/in/diego-gonz%C3%A1lez-su%C3%A1rez-64b2371b1/" target="_new"
                     title="Enlace a perfil de Linkedin">Perfil de Linkedin</a>
             </li>
             <li>
                 <img alt="Icono de Github" src="multimedia/github.png" />
-                <a href="https://github.com/uo276406" title="Enlace a perfil de Github">Perfil de Github</a>
+                <a href="https://github.com/uo276406" target="_new" title="Enlace a perfil de Github">Perfil de Github</a>
             </li>
         </ul>
     </footer>
