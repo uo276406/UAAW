@@ -1,6 +1,6 @@
 class Buscador {
     buscar() {
-        const searchTerm = document.getElementById('search').value;
+        const searchTerm = document.getElementsByTagName('search').value;
         const term = searchTerm.toLowerCase();
 
         $.getJSON('contenido/contenido.json', function(data) {
