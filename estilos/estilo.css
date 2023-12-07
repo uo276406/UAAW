@@ -14,7 +14,7 @@ body {
 /* Cabecera */
 /* (0,0,2) */
 header h1 {
-    background-color: #727171;
+    background-color: #2b2b2b;
     color: white;
     text-align: center;
     font-size: 36px;
@@ -29,7 +29,7 @@ nav {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    background-color: #727171;
+    background-color: #2b2b2b;
     color: white;
     padding: 0.5em;
     font-size: 16px;
@@ -48,7 +48,7 @@ nav a{
 
 /* (0,1,2) */
 nav a:hover {
-    background-color: darkgray;
+    background-color: rgb(89, 89, 89);
 }   
 
 body section {
@@ -100,7 +100,7 @@ main section ul li ol {
 /* (0,0,1) */
 footer {
 
-    background-color: #727171;
+    background-color: #2b2b2b;
     color: white;
     padding: 0.2em;
     text-align: center;
@@ -137,7 +137,7 @@ footer ul li a {
 
 /* (0,1,4) */
 footer ul li a:hover {
-    background-color: darkgray;
+    background-color: rgb(89, 89, 89);
 }   
 
 /* (0,0,1) */
