@@ -28,7 +28,7 @@ table tr {
 
 /* (0,0,2) */
 table th, table td {
-  flex: 1 0 200px; 
+  flex: 1 0 12.5em;
   padding: 1em;
   border: 0.1em solid #ddd;
   box-sizing: border-box;
